@@ -1,4 +1,4 @@
-module github.com/antchain-openapi-sdk-go
+module github.com/Zalintyle/antchain-openapi-sdk-go
 
 go 1.19
 
