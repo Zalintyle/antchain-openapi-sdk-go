@@ -1,4 +1,4 @@
-module github.com/antchain-openapi-sdk-go/realperson
+module github.com/antchain-openapi-sdk-go
 
 go 1.19
 
