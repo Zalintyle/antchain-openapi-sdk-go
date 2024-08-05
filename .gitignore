@@ -1,0 +1,5 @@
+.idea
+/vendor
+**/config-cache
+**/.DS_Store
+**/.xml
