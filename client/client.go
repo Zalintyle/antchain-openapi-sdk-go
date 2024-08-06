@@ -544,6 +544,41 @@ func (s CreateFacevrfServerResponse) String() string {
 	return tea.Prettify(s)
 }
 
+func (s CreateFacevrfServerResponse) GetReqMsgId() string {
+	if s.ReqMsgId == nil {
+		return ""
+	}
+	return *s.ReqMsgId
+}
+
+func (s CreateFacevrfServerResponse) GetResultCode() string {
+	if s.ResultCode == nil {
+		return ""
+	}
+	return *s.ResultCode
+}
+
+func (s CreateFacevrfServerResponse) GetResultMsg() string {
+	if s.ResultMsg == nil {
+		return ""
+	}
+	return *s.ResultMsg
+}
+
+func (s CreateFacevrfServerResponse) GetCertifyId() string {
+	if s.CertifyId == nil {
+		return ""
+	}
+	return *s.CertifyId
+}
+
+func (s CreateFacevrfServerResponse) GetCertifyUrl() string {
+	if s.CertifyUrl == nil {
+		return ""
+	}
+	return *s.CertifyUrl
+}
+
 func (s CreateFacevrfServerResponse) GoString() string {
 	return s.String()
 }
