@@ -328,6 +328,62 @@ type QueryFacevrfServerResponse struct {
 	Reason *string `json:"reason,omitempty" xml:"reason,omitempty"`
 }
 
+func (s QueryFacevrfServerResponse) GetReqMsgId() string {
+	if s.ReqMsgId == nil {
+		return ""
+	}
+	return *s.ReqMsgId
+}
+
+func (s QueryFacevrfServerResponse) GetResultCode() string {
+	if s.ResultCode == nil {
+		return ""
+	}
+	return *s.ResultCode
+}
+
+func (s QueryFacevrfServerResponse) GetResultMsg() string {
+	if s.ResultMsg == nil {
+		return ""
+	}
+	return *s.ResultMsg
+}
+
+func (s QueryFacevrfServerResponse) GetIdentityInfo() string {
+	if s.IdentityInfo == nil {
+		return ""
+	}
+	return *s.IdentityInfo
+}
+
+func (s QueryFacevrfServerResponse) GetMaterialInfo() string {
+	if s.MaterialInfo == nil {
+		return ""
+	}
+	return *s.MaterialInfo
+}
+
+func (s QueryFacevrfServerResponse) GetMaterialMatched() string {
+	if s.MaterialMatched == nil {
+		return ""
+	}
+	return *s.MaterialMatched
+}
+
+func (s QueryFacevrfServerResponse) GetPassed() string {
+	if s.Passed == nil {
+		return ""
+	}
+	return *s.Passed
+}
+
+func (s QueryFacevrfServerResponse) GetReason() string {
+	if s.Reason == nil {
+		return ""
+	}
+	return *s.Reason
+}
+
 func (s QueryFacevrfServerResponse) String() string {
 	return tea.Prettify(s)
 }
