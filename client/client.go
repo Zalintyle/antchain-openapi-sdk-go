@@ -1810,6 +1810,41 @@ func (s *CheckRouteTwometaResponse) SetExternInfo(v string) *CheckRouteTwometaRe
 	return s
 }
 
+func (s *CheckRouteTwometaResponse) GetReqMsgId() string {
+	if s.ReqMsgId == nil {
+		return ""
+	}
+	return *s.ReqMsgId
+}
+
+func (s *CheckRouteTwometaResponse) GetResultCode() string {
+	if s.ResultCode == nil {
+		return ""
+	}
+	return *s.ResultCode
+}
+
+func (s *CheckRouteTwometaResponse) GetResultMsg() string {
+	if s.ResultMsg == nil {
+		return ""
+	}
+	return *s.ResultMsg
+}
+
+func (s *CheckRouteTwometaResponse) GetMatch() string {
+	if s.Match == nil {
+		return ""
+	}
+	return *s.Match
+}
+
+func (s *CheckRouteTwometaResponse) GetExternInfo() string {
+	if s.ExternInfo == nil {
+		return ""
+	}
+	return *s.ExternInfo
+}
+
 type QueryMobileRiskRequest struct {
 	// OAuth模式下的授权token
 	AuthToken         *string `json:"auth_token,omitempty" xml:"auth_token,omitempty"`
